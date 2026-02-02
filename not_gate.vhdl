@@ -9,5 +9,7 @@ end not_gate;
 architecture logic of not_gate is
 begin
 y <= '0' when a = '1' else
-	 '1';
+	 '1' when a = '0' else
+		 'Z';
+
 end logic;
